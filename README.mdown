@@ -1,0 +1,22 @@
+Kotwig
+======
+Kotwig is a very simple Kohana v3 module for the template system named [Twig][]. It is built as an extension to the Kohana View, and thus share its’ API.
+
+For twig documentation, language syntax and whatnot, please see the official [twig documentation][docs] at its’ official website.
+
+Example
+-------
+This is the example of a very simple static-page Twig controller.
+
+    class Controller_Welcome extends Controller
+    {
+        public function action_index()
+        {
+            $this->request->response = Twig::factory('welcome');
+        }
+    }
+
+Assuming the default Kohana installation, pointing your browser to `/welcome` will load and render the file `views/welcome.php` using Twig as a template parser.
+
+[Twig]: http://www.twig-project.org/
+[docs]: http://www.twig-project.org/documentation
