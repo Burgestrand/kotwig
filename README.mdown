@@ -4,9 +4,17 @@ Kotwig is a very simple Kohana v3 module for the template system named [Twig][].
 
 For twig documentation, language syntax and whatnot, please see the official [twig documentation][docs] at its’ official website.
 
-Example
--------
-This is the example of a very simple static-page Twig controller.
+Notes to developers
+-------------------
+For my purposes, Kotwig is complete. I, however, do not use PHP frequently nowadays (university studies and ruby development) which means I am not likely to update this repository.
+
+My suggestion to you if you wish to use Kotwig: fork it and maintain updates of the Twig submodule yourself by issuing the following command in a terminal:
+
+    git submodule foreach 'git remote update; git merge origin/master'
+
+Code example
+------------
+This is what using Kotwig looks like:
 
     class Controller_Welcome extends Controller
     {
@@ -16,7 +24,7 @@ This is the example of a very simple static-page Twig controller.
         }
     }
 
-Assuming the default Kohana installation, pointing your browser to `/welcome` will load and render the file `views/welcome.php` using Twig as a template parser.
+Kotwig is aimed at developers, so make good use of the [userguide][http://github.com/kohana/userguide] module! ;)
 
 [Twig]: http://www.twig-project.org/
 [docs]: http://www.twig-project.org/documentation
