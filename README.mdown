@@ -24,7 +24,7 @@ This is what using Kotwig looks like:
         }
     }
 
-Kotwig is aimed at developers, so make good use of the [userguide][http://github.com/kohana/userguide] module! ;)
+Kotwig is aimed at developers, so make good use of the [userguide](http://github.com/kohana/userguide) module! ;)
 
 [Twig]: http://www.twig-project.org/
 [docs]: http://www.twig-project.org/documentation
